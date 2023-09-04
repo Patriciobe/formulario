@@ -21,6 +21,8 @@
         <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ingrese sus apellidos">
     </div>
+
+
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Cedula, Ruc</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cedula, Ruc">
@@ -38,7 +40,7 @@
         <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
         <input type="date" class="form-control" id="fechaNacimiento">
     </div>
-    
+
     <div class="mb-3">
         <label for="estadoCivil" class="form-label">Estado Civil</label>
         <select class="form-select" id="estadoCivil">
@@ -76,7 +78,7 @@
             <label class="form-check-label" for="otro">Otro</label>
         </div>
     </div>
-    
+
     <div class="mb-3">
         <label for="etnia" class="form-label">Etnia</label>
         <select class="form-select" id="etnia">
@@ -87,10 +89,140 @@
             <option value="otros">Otros</option>
         </select>
     </div>
-    
+
+    <div class="mb-3">
+        <label for="provincia" class="form-label">Provincia</label>
+        <select class="form-select" id="provincia">
+            <option value="azuay">Azuay</option>
+            <option value="bolivar">Bolívar</option>
+            <option value="canar">Cañar</option>
+            <option value="carchi">Carchi</option>
+            <option value="chimborazo">Chimborazo</option>
+            <option value="cotopaxi">Cotopaxi</option>
+            <option value="el-oro">El Oro</option>
+            <option value="esmeraldas">Esmeraldas</option>
+            <option value="galapagos">Galápagos</option>
+            <option value="guayas">Guayas</option>
+            <option value="imbabura">Imbabura</option>
+            <option value="loja">Loja</option>
+            <option value="los-rios">Los Ríos</option>
+            <option value="manabi">Manabí</option>
+            <option value="morona-santiago">Morona Santiago</option>
+            <option value="napo">Napo</option>
+            <option value="orellana">Orellana</option>
+            <option value="pastaza">Pastaza</option>
+            <option value="pichincha">Pichincha</option>
+            <option value="santa-elena">Santa Elena</option>
+            <option value="santo-domingo-de-los-tsachilas">Santo Domingo de los Tsáchilas</option>
+            <option value="sucumbios">Sucumbíos</option>
+            <option value="tungurahua">Tungurahua</option>
+            <option value="zamora-chinchipe">Zamora Chinchipe</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="canton" class="form-label">Cantón</label>
+        <input type="text" class="form-control" id="canton" placeholder="Ingrese el cantón">
+    </div>
+
+    <div class="mb-3">
+        <label for="canton" class="form-label">Ciudadela</label>
+        <input type="text" class="form-control" id="ciudadela" placeholder="Ingrese la Ciudadela">
+    </div>
     
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <label for="canton" class="form-label">Calle Principal</label>
+        <input type="text" class="form-control" id="calle1" placeholder="Ingrese el nombre">
+    </div>
+    
+    <div class="mb-3">
+        <label for="canton" class="form-label">Calle Secundaria</label>
+        <input type="text" class="form-control" id="calle2" placeholder="Ingrese el cantón">
+    </div>
+    
+    <div class="mb-3">
+        <label for="cedulaFoto" class="form-label">Adjuntar Foto de Cédula</label>
+        <input type="file" class="form-control" id="cedulaFoto" accept="image/*" name="cedulaFoto">
+    </div>
+    
+    <div class="mb-3">
+        <label for="casaPropia" class="form-label">¿Tiene casa propia?</label>
+        <select class="form-select" id="casaPropia" name="casaPropia">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">¿Tiene un solar para construir?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="tieneSolar" id="tieneSolarSi" value="si">
+            <label class="form-check-label" for="tieneSolarSi">Sí</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="tieneSolar" id="tieneSolarNo" value="no">
+            <label class="form-check-label" for="tieneSolarNo">No</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="fotoDomicilio" class="form-label">Adjuntar Foto del Domicilio oh Solar </label>
+        <input type="file" class="form-control" id="fotoDomicilio" accept="image/*" name="fotoDomicilio">
+    </div>
+
+    <div class="mb-3">
+        <label for="ocupacion" class="form-label">Ocupación</label>
+        <input type="text" class="form-control" id="ocupacion" placeholder="Ingrese su ocupación">
+    </div>
+
+    <div class="mb-3">
+        <label for="ingresoMensual" class="form-label">Ingreso Mensual (en USD)</label>
+        <input type="number" class="form-control" id="ingresoMensual" name="ingresoMensual" placeholder="Ingrese su ingreso mensual">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">¿Recibe ayuda o asistencia?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="recibeAyuda" id="recibeAyudaSi" value="si">
+            <label class="form-check-label" for="recibeAyudaSi">Sí</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="recibeAyuda" id="recibeAyudaNo" value="no">
+            <label class="form-check-label" for="recibeAyudaNo">No</label>
+        </div>
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">¿Tiene alguna discapacidad?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discapacidad" id="discapacidadSi" value="si">
+            <label class="form-check-label" for="discapacidadSi">Sí</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discapacidad" id="discapacidadNo" value="no">
+            <label class="form-check-label" for="discapacidadNo">No</label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">¿Tiene alguna discapacidad?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discapacidad" id="discapacidadSi" value="si">
+            <label class="form-check-label" for="discapacidadSi">Sí</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="discapacidad" id="discapacidadNo" value="no">
+            <label class="form-check-label" for="discapacidadNo">No</label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-check-label">
+            <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" class="form-check-input">
+            He leído y acepto los <a href="tus-terminos-y-condiciones.html" target="_blank">Términos y Condiciones</a>
+        </label>
+    </div>
+        
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Envia un comentario</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <!-- Enlaza a jQuery -->
